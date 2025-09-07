@@ -1,0 +1,19 @@
+@page
+@model DataBindingDemo.Pages.FormDemoModel
+@{
+    ViewData["Title"] = "Form Demo";
+}
+
+<h1>Form Submission</h1>
+
+<form method="post">
+    <label>Name: <input type="text" asp-for="Name"></label><br/>
+    <label>Age: <input type="number" asp-for="Age"></label><br/>
+    <button type="submit">Submit</button>
+</form>
+
+@if (Model.IsSubmitted)
+{
+    <p><strong>Form Submitted</strong></p>
+    <p>Name: @Model.Name, Age: @Model.Age</p>
+}

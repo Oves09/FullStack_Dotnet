@@ -1,0 +1,46 @@
+﻿@page
+@model RazorSyntaxApp.Pages.IndexModel
+@{
+    ViewData["Title"] = "Razor Syntax Demo";
+    var today = DateTime.Now;
+}
+
+<h1>Razor Syntax & PageModel Demo</h1>
+
+<!-- Mixing C# variable inside HTML -->
+<p>Today's date: <strong>@today.ToLongDateString()</strong></p>
+
+<!-- if-else with Razor -->
+@if (today.Hour < 12)
+{
+    <p>Good Morning </p>
+}
+else if (today.Hour < 18)
+{
+    <p>Good Afternoon </p>
+}
+else
+{
+    <p>Good Evening </p>
+}
+
+<!-- for loop with Razor -->
+<ul>
+    @for (var i = 1; i <= 5; i++)
+    {
+        <li>Item number @i</li>
+    }
+</ul>
+
+<!--  Form binding with property -->
+<form method="post">
+    <label for="age">Enter your age:</label>
+    <input id="age" name="Age" type="number" />
+    <button type="submit">Submit</button>
+</form>
+
+@if (Model.Age > 0)
+{
+    <p>Your age is: @Model.Age</p>
+    <p>You were born in: @(DateTime.Now.Year - Model.Age)</p>
+}

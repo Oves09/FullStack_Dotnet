@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Functional Programming</title>
+</head>
+<body>
+  <h2>JavaScript Functional Programming</h2>
+  <p id="output"></p>
+
+  <script>
+    // Pure Function Example
+    function square(x) {
+      return x * x; // no side effects
+    }
+
+    // Higher Order Function
+    function applyOperation(arr, operation) {
+      return arr.map(operation);
+    }
+
+    // Using Arrow Functions
+    const numbers = [1, 2, 3, 4, 5];
+    const doubled = applyOperation(numbers, n => n * 2);
+
+    // Reduce Example
+    const sum = numbers.reduce((acc, val) => acc + val, 0);
+
+    document.getElementById("output").innerHTML = `
+      Original: ${numbers}<br>
+      Doubled: ${doubled}<br>
+      Sum: ${sum}<br>
+      Square of 6: ${square(6)}
+    `;
+  </script>
+</body>
+</html>

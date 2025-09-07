@@ -1,0 +1,66 @@
+@model MVCApp.Models.Person
+@{
+    ViewData["Title"] = "Create Person";
+}
+
+<div class="container mt-4">
+    <h2>Complex Model Binding Example</h2>
+    <p>This form demonstrates binding to complex model types with nested objects.</p>
+
+    <form asp-action="Create" method="post" class="mt-4">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <fieldset class="border p-3 mb-4">
+            <legend class="w-auto px-2">Personal Information</legend>
+            
+            <div class="mb-3">
+                <label asp-for="FirstName" class="form-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LastName" class="form-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Age" class="form-label"></label>
+                <input asp-for="Age" class="form-control" type="number" min="1" max="120" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+        </fieldset>
+
+        <fieldset class="border p-3 mb-4">
+            <legend class="w-auto px-2">Address Information</legend>
+            
+            <div class="mb-3">
+                <label asp-for="Address.Street" class="form-label">Street Address</label>
+                <input asp-for="Address.Street" class="form-control" />
+                <span asp-validation-for="Address.Street" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Address.City" class="form-label"></label>
+                <input asp-for="Address.City" class="form-control" />
+                <span asp-validation-for="Address.City" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Address.ZipCode" class="form-label">ZIP Code</label>
+                <input asp-for="Address.ZipCode" class="form-control" placeholder="12345 or 12345-6789" />
+                <span asp-validation-for="Address.ZipCode" class="text-danger"></span>
+            </div>
+        </fieldset>
+
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-success">Create Person</button>
+            <a href="@Url.Action("Index", "Person")" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,87 @@
+@model ECommerceApp.Models.ViewModels.CartViewModel
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<h2>Shopping Cart</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show">
+        @TempData["Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+@if (Model.Items.Any())
+{
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Items)
+                {
+                    <tr>
+                        <td>
+                            <div>
+                                <h6>@item.Product?.Name</h6>
+                                <small class="text-muted">@item.Product?.Category</small>
+                            </div>
+                        </td>
+                        <td>$@item.Product?.Price</td>
+                        <td>
+                            <form method="post" action="/Cart/UpdateQuantity" class="d-inline">
+                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                <input type="number" name="quantity" value="@item.Quantity" min="0" max="10" class="form-control" style="width: 80px; display: inline-block;" onchange="this.form.submit()" />
+                            </form>
+                        </td>
+                        <td>$@((item.Product?.Price ?? 0) * item.Quantity)</td>
+                        <td>
+                            <form method="post" action="/Cart/RemoveItem" class="d-inline">
+                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Remove this item?')">
+                                    <i class="fas fa-trash"></i> Remove
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Total</th>
+                    <th>$@Model.TotalAmount</th>
+                    <th>@Model.TotalItems items</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div class="d-flex justify-content-between mt-4">
+        <a href="/Products" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Continue Shopping
+        </a>
+        <a href="/Checkout" class="btn btn-success btn-lg">
+            <i class="fas fa-credit-card"></i> Proceed to Checkout
+        </a>
+    </div>
+}
+else
+{
+    <div class="text-center py-5">
+        <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+        <h4>Your cart is empty</h4>
+        <p class="text-muted">Add some products to your cart to get started.</p>
+        <a href="/Products" class="btn btn-primary">
+            <i class="fas fa-shopping-bag"></i> Start Shopping
+        </a>
+    </div>
+}

@@ -1,0 +1,10 @@
+@page
+@model ContactModel
+
+
+<form method="post" >
+    <input type="text" asp-for="Name" placeholder="Enter Your name:" />
+    <button type="submit"></button>
+</form>
+
+<p>Your entered: @Model.Name</p>

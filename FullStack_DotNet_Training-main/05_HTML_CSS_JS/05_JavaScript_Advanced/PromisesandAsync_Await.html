@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Promises and Async</title>
+</head>
+<body>
+  <h2>Promises and Async/Await</h2>
+  <p id="async"></p>
+
+  <script>
+    function fetchData() {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve("Data fetched successfully!"), 2000);
+      });
+    }
+
+    async function getData() {
+      document.getElementById("async").innerHTML = "Fetching...";
+      const result = await fetchData();
+      document.getElementById("async").innerHTML = result;
+    }
+
+    getData();
+  </script>
+</body>
+</html>

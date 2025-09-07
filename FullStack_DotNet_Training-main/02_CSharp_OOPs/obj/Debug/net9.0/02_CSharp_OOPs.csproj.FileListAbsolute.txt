@@ -1,0 +1,15 @@
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\obj\Debug\net9.0\02_CSharp_OOPs.GeneratedMSBuildEditorConfig.editorconfig
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\obj\Debug\net9.0\02_CSharp_OOPs.AssemblyInfoInputs.cache
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\obj\Debug\net9.0\02_CSharp_OOPs.AssemblyInfo.cs
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\obj\Debug\net9.0\02_CSharp_OOPs.csproj.CoreCompileInputs.cache
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\obj\Debug\net9.0\02_CSharp_OOPs.sourcelink.json
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\bin\Debug\net9.0\02_CSharp_OOPs.exe
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\bin\Debug\net9.0\02_CSharp_OOPs.deps.json
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\bin\Debug\net9.0\02_CSharp_OOPs.runtimeconfig.json
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\bin\Debug\net9.0\02_CSharp_OOPs.dll
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\bin\Debug\net9.0\02_CSharp_OOPs.pdb
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\obj\Debug\net9.0\02_CSharp_OOPs.dll
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\obj\Debug\net9.0\refint\02_CSharp_OOPs.dll
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\obj\Debug\net9.0\02_CSharp_OOPs.pdb
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\obj\Debug\net9.0\02_CSharp_OOPs.genruntimeconfig.cache
+F:\FullStack_DotNet_Training\02_CSharp_OOPs\obj\Debug\net9.0\ref\02_CSharp_OOPs.dll

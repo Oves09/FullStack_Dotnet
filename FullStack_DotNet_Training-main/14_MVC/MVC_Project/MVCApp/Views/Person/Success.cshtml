@@ -1,0 +1,37 @@
+@model MVCApp.Models.Person
+@{
+    ViewData["Title"] = "Success";
+}
+
+<div class="container mt-4">
+    <div class="alert alert-success">
+        <h4>Person Created Successfully!</h4>
+        <p>The following information was submitted:</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h5>Person Details</h5>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Name:</dt>
+                <dd class="col-sm-9">@Model.FirstName @Model.LastName</dd>
+
+                <dt class="col-sm-3">Age:</dt>
+                <dd class="col-sm-9">@Model.Age years old</dd>
+
+                <dt class="col-sm-3">Address:</dt>
+                <dd class="col-sm-9">
+                    @Model.Address.Street<br>
+                    @Model.Address.City, @Model.Address.ZipCode
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a href="@Url.Action("Create", "Person")" class="btn btn-primary">Create Another</a>
+        <a href="@Url.Action("Index", "Person")" class="btn btn-secondary">Back to Home</a>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client-side Scripting</title>
+</head>
+<body>
+  <h2>Client-Side Scripting Example</h2>
+  <form onsubmit="return validateForm()">
+    <label>Name: <input type="text" id="name"></label><br><br>
+    <label>Email: <input type="text" id="email"></label><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="result"></p>
+
+  <script>
+    function validateForm() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const result = document.getElementById("result");
+
+      if (name === "" || email === "") {
+        result.innerHTML = "⚠️ Please fill all fields!";
+        return false; // stops form submission
+      }
+      if (!email.includes("@")) {
+        result.innerHTML = "⚠️ Invalid Email!";
+        return false;
+      }
+
+      result.innerHTML = "✅ Form submitted successfully!";
+      return true;
+    }
+  </script>
+</body>
+</html>

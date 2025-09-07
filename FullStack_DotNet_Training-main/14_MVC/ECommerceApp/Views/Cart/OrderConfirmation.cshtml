@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Order Confirmation";
+}
+
+<div class="text-center py-5">
+    <i class="fas fa-check-circle fa-5x text-success mb-4"></i>
+    <h1>Order Confirmed!</h1>
+    <p class="lead">Thank you for your purchase. Your order has been successfully placed.</p>
+    
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+    
+    <div class="mt-4">
+        <a href="/Products" class="btn btn-primary">Continue Shopping</a>
+        <a href="/" class="btn btn-outline-secondary">Go to Home</a>
+    </div>
+</div>

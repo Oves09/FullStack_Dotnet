@@ -1,0 +1,20 @@
+.user-list-container {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.user-list-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-list-container li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.user-list-container li:hover {
+  background-color: #f1f1f1;
+}

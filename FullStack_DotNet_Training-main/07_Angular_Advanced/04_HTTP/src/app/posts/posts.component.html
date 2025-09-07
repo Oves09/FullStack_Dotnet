@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>📌 Posts from API</h2>
+
+  <div *ngIf="loading">Loading posts...</div>
+
+  <ul *ngIf="!loading">
+    <li *ngFor="let post of posts">
+      <strong>{{ post.title }}</strong>
+      <p>{{ post.body }}</p>
+    </li>
+  </ul>
+</div>

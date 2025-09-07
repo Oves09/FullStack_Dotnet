@@ -1,0 +1,12 @@
+<!-- *ngIf guards the block. Inside it, student is guaranteed to exist -->
+<div *ngIf="student" class="student-detail">
+  <h3>Student Detail</h3>
+  <p><strong>ID:</strong> {{ student.id }}</p>
+  <p><strong>Name:</strong> {{ student.name }}</p>
+  <p><strong>Age:</strong> {{ student.age }}</p>
+  <p><strong>Course:</strong> {{ student.course }}</p>
+</div>
+
+<div *ngIf="!student" class="no-student">
+  <p>Please select a student from the list.</p>
+</div>

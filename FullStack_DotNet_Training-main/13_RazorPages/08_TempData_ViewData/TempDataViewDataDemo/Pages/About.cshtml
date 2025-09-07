@@ -1,0 +1,12 @@
+@page
+@model TempDataViewDataDemo.Pages.AboutModel
+@{
+    ViewData["Title"] = "About Page";
+}
+
+<h2>About Page</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <p class="text-success">@TempData["SuccessMessage"]</p>
+}

@@ -1,0 +1,30 @@
+@model List<AdvancedRoutingApp.Models.Product>
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h2>All Products</h2>
+
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <p class="card-text">@product.Description</p>
+                    <p class="card-text"><strong>$@product.Price</strong></p>
+                    <a href="/Products/@product.Category/@product.Id" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<h3>Test Complex Routing</h3>
+<ul>
+    <li><a href="/Products/electronics/1">Electronics Product #1</a></li>
+    <li><a href="/Products/clothing/2">Clothing Product #2</a></li>
+    <li><a href="/Products/Category/electronics">Electronics Category</a></li>
+    <li><a href="/Products/ById/@Guid.NewGuid()">Search by GUID</a></li>
+</ul>

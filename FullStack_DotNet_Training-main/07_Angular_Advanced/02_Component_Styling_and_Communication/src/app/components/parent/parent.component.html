@@ -1,0 +1,10 @@
+<div class="parent-box">
+    <h2>Parent Component</h2>
+    <p><strong>Message to child:</strong>{{ parentMessage }}</p>
+
+  <!-- Passing data to child -->
+  <app-child [childInput]="parentMessage" 
+             (childOutput)="onMessageFromChild($event)">
+  </app-child>
+  <p *ngIf="receivedMessage"><strong>Message form Child:</strong> {{ receivedMessage }}</p>
+</div>

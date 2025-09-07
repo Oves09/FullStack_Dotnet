@@ -1,0 +1,71 @@
+@model AdvancedRoutingApp.Models.User
+@{
+    ViewData["Title"] = $"{Model.Username} - Profile";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/Users">Users</a></li>
+        <li class="breadcrumb-item active">@Model.Username</li>
+    </ol>
+</nav>
+
+<h2>User Profile</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Profile Information</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Username:</strong> @Model.Username</p>
+                <p><strong>Email:</strong> @Model.Email</p>
+                <p><strong>Role:</strong> 
+                    <span class="badge bg-@(Model.Role == "Admin" ? "danger" : "primary")">@Model.Role</span>
+                </p>
+                <p><strong>Total Orders:</strong> @Model.Orders.Count</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Recent Orders</h5>
+            </div>
+            <div class="card-body">
+                @if (Model.Orders.Any())
+                {
+                    <div class="list-group">
+                        @foreach (var order in Model.Orders.Take(3))
+                        {
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">@order.ProductName</h6>
+                                    <small>@order.OrderDate.ToString("MM/dd/yyyy")</small>
+                                </div>
+                                <p class="mb-1">Amount: $@order.Amount</p>
+                            </div>
+                        }
+                    </div>
+                    @if (Model.Orders.Count > 3)
+                    {
+                        <div class="mt-2">
+                            <a href="/Users/@Model.Username/Orders" class="btn btn-outline-primary btn-sm">View All Orders</a>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted">No orders yet.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4">
+    <a href="/Users/@Model.Username/Orders" class="btn btn-primary">View All Orders</a>
+    <a href="/Users" class="btn btn-secondary">Back to Users</a>
+</div>

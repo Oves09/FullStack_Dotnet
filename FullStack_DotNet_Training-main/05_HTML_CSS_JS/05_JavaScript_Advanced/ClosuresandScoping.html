@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Closures and Scoping</title>
+</head>
+<body>
+  <h2>Closure with Block Scope</h2>
+  <p id="scope"></p>
+
+  <script>
+    function outer() {
+      let outerVar = "I'm from outer function!";
+      function inner() {
+        return outerVar; // inner remembers outerVar
+      }
+      return inner;
+    }
+
+    const innerFunc = outer();
+    document.getElementById("scope").innerHTML = innerFunc();
+  </script>
+</body>
+</html>

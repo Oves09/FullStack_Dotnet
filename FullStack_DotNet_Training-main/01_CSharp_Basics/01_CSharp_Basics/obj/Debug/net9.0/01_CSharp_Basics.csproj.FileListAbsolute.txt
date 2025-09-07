@@ -1,0 +1,15 @@
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\bin\Debug\net9.0\01_CSharp_Basics.exe
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\bin\Debug\net9.0\01_CSharp_Basics.deps.json
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\bin\Debug\net9.0\01_CSharp_Basics.runtimeconfig.json
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\bin\Debug\net9.0\01_CSharp_Basics.dll
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\bin\Debug\net9.0\01_CSharp_Basics.pdb
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\obj\Debug\net9.0\01_CSharp_Basics.GeneratedMSBuildEditorConfig.editorconfig
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\obj\Debug\net9.0\01_CSharp_Basics.AssemblyInfoInputs.cache
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\obj\Debug\net9.0\01_CSharp_Basics.AssemblyInfo.cs
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\obj\Debug\net9.0\01_CSharp_Basics.csproj.CoreCompileInputs.cache
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\obj\Debug\net9.0\01_CSharp_Basics.sourcelink.json
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\obj\Debug\net9.0\01_CSharp_Basics.dll
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\obj\Debug\net9.0\refint\01_CSharp_Basics.dll
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\obj\Debug\net9.0\01_CSharp_Basics.pdb
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\obj\Debug\net9.0\01_CSharp_Basics.genruntimeconfig.cache
+F:\FullStack_DotNet_Training\01_CSharp_Basics\01_CSharp_Basics\obj\Debug\net9.0\ref\01_CSharp_Basics.dll

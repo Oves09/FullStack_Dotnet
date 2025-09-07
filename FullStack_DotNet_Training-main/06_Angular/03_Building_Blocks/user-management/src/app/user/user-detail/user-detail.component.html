@@ -1,0 +1,10 @@
+<div *ngIf="user" class="user-detail">
+  <h3>User Detail</h3>
+  <p><strong>ID:</strong> {{ user.id }}</p>
+  <p><strong>Name:</strong> {{ user.name }}</p>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+</div>
+
+<div *ngIf="!user" class="no-user">
+  <p>Please select a user from the list.</p>
+</div>

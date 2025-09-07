@@ -1,0 +1,15 @@
+@page
+@model PageModelsDemo.Pages.PageModelDemoModel
+@{
+    ViewData["Title"] = "PageModel Demo";
+}
+
+<h1>PageModel Handlers</h1>
+
+<p>Message: <strong>@Model.Message</strong></p>
+
+<form method="post">
+    <button type="submit" asp-page-handler="Default">Submit Default</button>
+    <button type="submit" asp-page-handler="Save">Save</button>
+    <button type="submit" asp-page-handler="Delete">Delete</button>
+</form>

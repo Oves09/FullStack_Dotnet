@@ -1,0 +1,12 @@
+body { 
+    font-family: system-ui, sans-serif; 
+    margin: 2rem; 
+}
+button {
+     padding: .5rem 1rem; 
+     border: 1px solid #888;
+      border-radius: .5rem; 
+    }
+pre {
+     background: #f7f7f7; 
+     padding:1 rem; }

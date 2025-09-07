@@ -1,0 +1,18 @@
+<h2>{{ title | customUppercase }}</h2>
+
+<!-- Attribute Directive -->
+<p appHighlight [highlightColor]="'lightgreen'">
+  Hover me to see highlight directive in action!
+</p>
+
+<!-- Structural Directive -->
+<button (click)="condition = !condition">Toggle Condition</button>
+<div *appUnless="condition">
+  This shows when condition is FALSE
+</div>
+
+<!-- Filter Pipe -->
+<input type="text" [(ngModel)]="searchText" placeholder="Search name...">
+<ul>
+  <li *ngFor="let name of names | filter:searchText">{{ name }}</li>
+</ul>

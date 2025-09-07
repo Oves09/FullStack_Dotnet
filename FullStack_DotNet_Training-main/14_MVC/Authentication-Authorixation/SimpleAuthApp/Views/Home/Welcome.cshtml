@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Welcome";
+}
+<h2>Hello — you logged in successfully</h2>
+<p>Welcome, <strong>@ViewBag.FullName</strong>!</p>
+
+<form asp-controller="Account" asp-action="Logout" method="post">
+    @Html.AntiForgeryToken()
+    <button type="submit">Logout</button>
+</form>

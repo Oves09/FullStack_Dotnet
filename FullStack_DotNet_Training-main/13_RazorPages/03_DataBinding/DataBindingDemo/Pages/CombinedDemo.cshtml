@@ -1,0 +1,18 @@
+@page
+@model DataBindingDemo.Pages.CombinedDemoModel
+@{
+    ViewData["Title"] = "Combined Demo";
+}
+
+<h1>Combined Binding Example</h1>
+
+<p>Query Parameter: Greeting = <strong>@Model.Greeting</strong></p>
+
+<form method="post">
+    <label>Message: <input type="text" asp-for="Message"></label>
+    <button type="submit">Submit</button>
+</form>
+
+@if (Model.IsSubmitted){
+    <p>You submitted: <strong>@Model.Message</strong></p>
+}

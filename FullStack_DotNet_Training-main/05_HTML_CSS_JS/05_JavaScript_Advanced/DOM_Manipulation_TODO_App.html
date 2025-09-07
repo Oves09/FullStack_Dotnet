@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced DOM Manipulation</title>
+  <style>
+    .highlight { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Todo List</h2>
+  <input type="text" id="taskInput" placeholder="Enter task">
+  <button onclick="addTask()">Add Task</button>
+  <ul id="taskList"></ul>
+
+  <script>
+    function addTask() {
+      let input = document.getElementById("taskInput");
+      let taskText = input.value.trim();
+
+      if (taskText === "") return;
+
+      let li = document.createElement("li");
+      li.textContent = taskText;
+
+      // Add delete button
+      let delBtn = document.createElement("button");
+      delBtn.textContent = "❌";
+      delBtn.onclick = function () {
+        li.remove();
+      };
+
+      // Add toggle highlight
+      li.onclick = function () {
+        li.classList.toggle("highlight");
+      };
+
+      li.appendChild(delBtn);
+      document.getElementById("taskList").appendChild(li);
+      input.value = "";
+    }
+  </script>
+</body>
+</html>

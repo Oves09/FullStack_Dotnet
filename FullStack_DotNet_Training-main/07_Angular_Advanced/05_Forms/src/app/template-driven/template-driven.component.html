@@ -1,0 +1,24 @@
+<div class="form-container">
+  <h2>Template Driven Form</h2>
+  <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+    <label>Name:</label>
+    <input type="text" name="name" [(ngModel)]="user.name" required />
+    <div *ngIf="userForm.submitted && !user.name" class="error">
+      Name is required
+    </div>
+
+    <label>Email:</label>
+    <input type="email" name="email" [(ngModel)]="user.email" required />
+    <div *ngIf="userForm.submitted && !user.email" class="error">
+      Email is required
+    </div>
+
+    <label>Password:</label>
+    <input type="password" name="password" [(ngModel)]="user.password" minlength="6" required />
+    <div *ngIf="userForm.submitted && user.password.length < 6" class="error">
+      Password must be at least 6 characters
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

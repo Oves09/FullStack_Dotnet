@@ -1,0 +1,15 @@
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\bin\Debug\net9.0\Open_ClosedPrinciple.exe
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\bin\Debug\net9.0\Open_ClosedPrinciple.deps.json
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\bin\Debug\net9.0\Open_ClosedPrinciple.runtimeconfig.json
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\bin\Debug\net9.0\Open_ClosedPrinciple.dll
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\bin\Debug\net9.0\Open_ClosedPrinciple.pdb
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\obj\Debug\net9.0\Open_ClosedPrinciple.GeneratedMSBuildEditorConfig.editorconfig
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\obj\Debug\net9.0\Open_ClosedPrinciple.AssemblyInfoInputs.cache
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\obj\Debug\net9.0\Open_ClosedPrinciple.AssemblyInfo.cs
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\obj\Debug\net9.0\Open_ClosedPrinciple.csproj.CoreCompileInputs.cache
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\obj\Debug\net9.0\Open_ClosedPrinciple.sourcelink.json
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\obj\Debug\net9.0\Open_ClosedPrinciple.dll
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\obj\Debug\net9.0\refint\Open_ClosedPrinciple.dll
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\obj\Debug\net9.0\Open_ClosedPrinciple.pdb
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\obj\Debug\net9.0\Open_ClosedPrinciple.genruntimeconfig.cache
+F:\Wipro_DotnetFullstack\02_AdvanceStart\SolidPrinciples\Open_ClosedPrinciple\obj\Debug\net9.0\ref\Open_ClosedPrinciple.dll

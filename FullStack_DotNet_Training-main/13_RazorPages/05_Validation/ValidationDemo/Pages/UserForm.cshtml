@@ -1,0 +1,36 @@
+@page
+@model ValidationDemo.Pages.UserFormModel
+@{
+    ViewData["Title"] = "User Form Validation";
+}
+
+<h1>User Registration</h1>
+
+<form method="post">
+    <div>
+        <label asp-for="User.Name"></label>
+        <input asp-for="User.Name" />
+        <span asp-validation-for="User.Name" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="User.Email"></label>
+        <input asp-for="User.Email" />
+        <span asp-validation-for="User.Email" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="User.Age"></label>
+        <input asp-for="User.Age" />
+        <span asp-validation-for="User.Age" class="text-danger"></span>
+    </div>
+
+    <button type="submit">Register</button>
+</form>
+
+<hr />
+
+<h3>Validation Summary:</h3>
+<div>
+    <span asp-validation-summary="All" class="text-danger"></span>
+</div>

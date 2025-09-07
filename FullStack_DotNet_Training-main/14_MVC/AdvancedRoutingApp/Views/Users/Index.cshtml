@@ -1,0 +1,41 @@
+@model List<AdvancedRoutingApp.Models.User>
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h2>All Users</h2>
+
+<div class="row">
+    @foreach (var user in Model)
+    {
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@user.Username</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@user.Role</h6>
+                    <p class="card-text">
+                        <strong>Email:</strong> @user.Email<br>
+                        <strong>Orders:</strong> @user.Orders.Count
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                        <a href="/Users/@user.Username" class="btn btn-primary btn-sm">View Profile</a>
+                        <a href="/Users/@user.Username/Orders" class="btn btn-outline-primary btn-sm">View Orders</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<h3>Test Complex User Routing</h3>
+<div class="alert alert-info">
+    <h5>Try these URLs:</h5>
+    <ul>
+        <li><a href="/Users/john_doe/Orders">John Doe's Orders</a></li>
+        <li><a href="/Users/jane_smith/Orders">Jane Smith's Orders</a></li>
+        <li><a href="/Users/john_doe">John Doe's Profile</a></li>
+        <li><a href="/Users/jane_smith">Jane Smith's Profile</a></li>
+    </ul>
+</div>

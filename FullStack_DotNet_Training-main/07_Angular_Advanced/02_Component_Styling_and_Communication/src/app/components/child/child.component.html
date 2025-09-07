@@ -1,0 +1,13 @@
+<div class="child-box">
+    <h3>Child Component</h3>
+    <p><strong>Received from Parent:</strong>{{ childInput }}</p>
+
+    <button (click)="sendMessage()">Send Message to Parent</button>
+
+    <div class="log-box">
+        <h4>Lifecycle Logs:</h4>
+        <ul>
+            <li *ngFor="let entry of log">{{ entry }}</li>
+        </ul>
+    </div>
+</div>

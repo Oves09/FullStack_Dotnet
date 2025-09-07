@@ -1,0 +1,12 @@
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\bin\Debug\net9.0\CalculatorLib.deps.json
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\bin\Debug\net9.0\CalculatorLib.dll
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\bin\Debug\net9.0\CalculatorLib.pdb
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\obj\Debug\net9.0\CalculatorLib.GeneratedMSBuildEditorConfig.editorconfig
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\obj\Debug\net9.0\CalculatorLib.AssemblyInfoInputs.cache
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\obj\Debug\net9.0\CalculatorLib.AssemblyInfo.cs
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\obj\Debug\net9.0\CalculatorLib.csproj.CoreCompileInputs.cache
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\obj\Debug\net9.0\CalculatorLib.sourcelink.json
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\obj\Debug\net9.0\CalculatorLib.dll
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\obj\Debug\net9.0\refint\CalculatorLib.dll
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\obj\Debug\net9.0\CalculatorLib.pdb
+F:\FullStack_DotNet_Training\08_UnitTesting_TDD\02_TestingFrameworks\CalculatorLib\obj\Debug\net9.0\ref\CalculatorLib.dll

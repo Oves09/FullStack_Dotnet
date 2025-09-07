@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Success";
+}
+
+<div class="container mt-4">
+    <div class="alert alert-success">
+        <h4>Form Submitted Successfully!</h4>
+        <p>@ViewBag.Message</p>
+    </div>
+
+    <a href="@Url.Action("SimpleForm", "Person")" class="btn btn-primary">Try Again</a>
+    <a href="@Url.Action("Index", "Person")" class="btn btn-secondary">Back to Home</a>
+</div>

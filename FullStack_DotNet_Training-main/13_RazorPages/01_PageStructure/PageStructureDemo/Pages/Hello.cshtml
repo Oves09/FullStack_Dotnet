@@ -1,0 +1,23 @@
+@page
+@model PageStructureDemo.Pages.HelloModel
+@{
+    ViewData["Title"] = "Hello Page";
+}
+
+<h1>Hello Razor Pages</h1>
+<p>This page demonstarates the directive and PageModel.</p>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 2rem;
+    }
+    h1{
+        color: darkblue;
+    }
+    p{
+        color: greenyellow;
+    }
+</style>
+
+<p><strong>Message: </strong> @Model.Message</p>

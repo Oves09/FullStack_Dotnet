@@ -1,0 +1,15 @@
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\obj\Debug\net9.0\03_CSharp_Advanced.GeneratedMSBuildEditorConfig.editorconfig
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\obj\Debug\net9.0\03_CSharp_Advanced.AssemblyInfoInputs.cache
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\obj\Debug\net9.0\03_CSharp_Advanced.AssemblyInfo.cs
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\obj\Debug\net9.0\03_CSharp_Advanced.csproj.CoreCompileInputs.cache
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\obj\Debug\net9.0\03_CSharp_Advanced.sourcelink.json
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\bin\Debug\net9.0\03_CSharp_Advanced.exe
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\bin\Debug\net9.0\03_CSharp_Advanced.deps.json
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\bin\Debug\net9.0\03_CSharp_Advanced.runtimeconfig.json
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\bin\Debug\net9.0\03_CSharp_Advanced.dll
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\bin\Debug\net9.0\03_CSharp_Advanced.pdb
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\obj\Debug\net9.0\03_CSharp_Advanced.dll
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\obj\Debug\net9.0\refint\03_CSharp_Advanced.dll
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\obj\Debug\net9.0\03_CSharp_Advanced.pdb
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\obj\Debug\net9.0\03_CSharp_Advanced.genruntimeconfig.cache
+F:\FullStack_DotNet_Training\03_CSharp_Advanced\obj\Debug\net9.0\ref\03_CSharp_Advanced.dll

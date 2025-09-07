@@ -1,0 +1,14 @@
+@page
+@model RazorPageDemo.Pages.ProductsModel
+@{
+    ViewData["Title"] = "Products Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<ul>
+    @foreach(var product in Model.ProductList)
+    {
+        <li>@product</li>
+    }
+</ul>

@@ -1,0 +1,29 @@
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+}
+button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}

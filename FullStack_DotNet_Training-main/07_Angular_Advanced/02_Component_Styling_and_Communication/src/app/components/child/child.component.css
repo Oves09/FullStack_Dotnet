@@ -1,0 +1,13 @@
+.child-box {
+    border: 2px solid green;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #e6ffe6;
+}
+
+.log-box {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+}

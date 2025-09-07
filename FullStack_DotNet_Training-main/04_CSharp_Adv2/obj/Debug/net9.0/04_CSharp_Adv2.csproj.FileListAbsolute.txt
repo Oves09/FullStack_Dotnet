@@ -1,0 +1,15 @@
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\bin\Debug\net9.0\04_CSharp_Adv2.exe
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\bin\Debug\net9.0\04_CSharp_Adv2.deps.json
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\bin\Debug\net9.0\04_CSharp_Adv2.runtimeconfig.json
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\bin\Debug\net9.0\04_CSharp_Adv2.dll
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\bin\Debug\net9.0\04_CSharp_Adv2.pdb
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\obj\Debug\net9.0\04_CSharp_Adv2.GeneratedMSBuildEditorConfig.editorconfig
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\obj\Debug\net9.0\04_CSharp_Adv2.AssemblyInfoInputs.cache
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\obj\Debug\net9.0\04_CSharp_Adv2.AssemblyInfo.cs
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\obj\Debug\net9.0\04_CSharp_Adv2.csproj.CoreCompileInputs.cache
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\obj\Debug\net9.0\04_CSharp_Adv2.sourcelink.json
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\obj\Debug\net9.0\04_CSharp_Adv2.dll
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\obj\Debug\net9.0\refint\04_CSharp_Adv2.dll
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\obj\Debug\net9.0\04_CSharp_Adv2.pdb
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\obj\Debug\net9.0\04_CSharp_Adv2.genruntimeconfig.cache
+F:\FullStack_DotNet_Training\04_CSharp_Adv2\obj\Debug\net9.0\ref\04_CSharp_Adv2.dll

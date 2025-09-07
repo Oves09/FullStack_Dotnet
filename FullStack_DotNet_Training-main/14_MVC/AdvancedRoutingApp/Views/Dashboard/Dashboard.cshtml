@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = $"{ViewBag.Role} Dashboard";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Current Role: @ViewBag.Role</h5>
+        
+        @if (ViewBag.Role == "Admin")
+        {
+            <div class="alert alert-success">
+                <h6>Admin Features:</h6>
+                <ul>
+                    <li>User Management</li>
+                    <li>System Settings</li>
+                    <li>Reports & Analytics</li>
+                    <li>Product Management</li>
+                </ul>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info">
+                <h6>User Features:</h6>
+                <ul>
+                    <li>View Products</li>
+                    <li>Place Orders</li>
+                    <li>View Order History</li>
+                    <li>Update Profile</li>
+                </ul>
+            </div>
+        }
+    </div>
+</div>
+
+<h4>Test Dynamic Routing:</h4>
+<p>
+    <a href="/SetRole/Admin" class="btn btn-warning">Switch to Admin</a>
+    <a href="/SetRole/User" class="btn btn-info">Switch to User</a>
+</p>

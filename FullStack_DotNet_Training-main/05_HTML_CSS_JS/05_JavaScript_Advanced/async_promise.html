@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Async JS</title>
+    </head>
+    <body>
+        <h2>Async/Await Demo</h2>
+        <script>
+            function fetchData() {
+                return new Promise(resolve => {
+                    setTimeout(() => resolve("Data Loaded"), 1000);
+                });
+            }
+
+            async function loadData() {
+                const data = await fetchData();
+                console.log(data);
+            }
+
+            loadData();
+        </script>
+    </body>
+</html>

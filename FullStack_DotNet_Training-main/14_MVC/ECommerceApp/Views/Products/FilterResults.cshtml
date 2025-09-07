@@ -1,0 +1,71 @@
+@model List<ECommerceApp.Models.Product>
+@{
+    ViewData["Title"] = $"Filtered Results - {ViewBag.Category}";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/Products">Products</a></li>
+        <li class="breadcrumb-item"><a href="/Products/Category/@ViewBag.Category">@ViewBag.Category</a></li>
+        <li class="breadcrumb-item active">Filter Results</li>
+    </ol>
+</nav>
+
+<div class="mb-4">
+    <h2>Filtered Results</h2>
+    <div class="alert alert-info">
+        <strong>Category:</strong> @ViewBag.Category<br>
+        <strong>Price Range:</strong> $@ViewBag.PriceRange.Replace("-", " - $")<br>
+        <strong>Results:</strong> @Model.Count products found
+    </div>
+</div>
+
+@if (Model.Any())
+{
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text"><strong>$@product.Price</strong></p>
+                        <p class="card-text"><small class="text-muted">Stock: @product.StockQuantity</small></p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <a href="/Products/@product.Category/@product.Id" class="btn btn-primary btn-sm">View Details</a>
+                            @if (product.StockQuantity > 0)
+                            {
+                                <form method="post" action="/Products/AddToCart" class="d-inline">
+                                    <input type="hidden" name="productId" value="@product.Id" />
+                                    <input type="hidden" name="quantity" value="1" />
+                                    <button type="submit" class="btn btn-success btn-sm">Add to Cart</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <span class="btn btn-secondary btn-sm disabled">Out of Stock</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        <i class="fas fa-exclamation-triangle"></i> No products found matching your filter criteria.
+    </div>
+}
+
+<div class="mt-4">
+    <a href="/Products/Category/@ViewBag.Category" class="btn btn-secondary">
+        <i class="fas fa-arrow-left"></i> Back to @ViewBag.Category
+    </a>
+    <a href="/Products" class="btn btn-outline-secondary">All Products</a>
+</div>

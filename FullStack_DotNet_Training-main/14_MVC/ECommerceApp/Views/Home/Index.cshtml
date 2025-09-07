@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "E-Commerce Store";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Our E-Commerce Store</h1>
+    <p>Discover amazing products with advanced routing features!</p>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <i class="fas fa-laptop fa-3x text-primary mb-3"></i>
+                <h5>Electronics</h5>
+                <p>Latest gadgets and electronics</p>
+                <a href="/Products/Category/electronics" class="btn btn-primary">Shop Electronics</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <i class="fas fa-tshirt fa-3x text-success mb-3"></i>
+                <h5>Clothing</h5>
+                <p>Trendy fashion and apparel</p>
+                <a href="/Products/Category/clothing" class="btn btn-success">Shop Clothing</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <i class="fas fa-book fa-3x text-info mb-3"></i>
+                <h5>Books</h5>
+                <p>Educational and entertaining books</p>
+                <a href="/Products/Category/books" class="btn btn-info">Shop Books</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-5 text-center">
+    <h3>Advanced Routing Examples</h3>
+    <div class="btn-group" role="group">
+        <a href="/Products/electronics/1" class="btn btn-outline-primary">Product Details Route</a>
+        <a href="/Products/Filter/electronics/0-300" class="btn btn-outline-success">Filter Route</a>
+        <a href="/Checkout" class="btn btn-outline-warning">Dynamic Route Test</a>
+    </div>
+</div>

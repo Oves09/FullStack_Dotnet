@@ -1,0 +1,13 @@
+@model StudentManagementApp.Models.Student
+
+<h2>Student Details</h2>
+
+<div>
+    <p><strong>ID:</strong> @Model.Id</p>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Age:</strong> @Model.Age</p>
+    <p><strong>Course:</strong> @Model.Course</p>
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a> |
+<a asp-action="Index">Back to List</a>

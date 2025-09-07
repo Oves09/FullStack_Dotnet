@@ -1,0 +1,10 @@
+@* Route Parameters *@
+
+@page "/User/{id?}"
+@model RoutingDemo.Pages.UserModel
+@{
+    ViewData["Title"] = "User Page";
+}
+
+<h1>User Page</h1>
+<p>User ID: <strong>@Model.UserId</strong></p>

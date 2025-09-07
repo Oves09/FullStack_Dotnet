@@ -1,0 +1,28 @@
+@model List<ECommerceApp.Models.User>
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h2>All Users</h2>
+
+<div class="row">
+    @foreach (var user in Model)
+    {
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@user.Username</h5>
+                    <p class="card-text">
+                        <strong>Email:</strong> @user.Email<br>
+                        <strong>Last Login:</strong> @user.LastLoginDate.ToString("MM/dd/yyyy")
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Status: @(user.IsLoggedIn ? "Online" : "Offline")</small>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<a href="/" class="btn btn-secondary">Back to Home</a>

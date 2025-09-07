@@ -1,0 +1,250 @@
+@* @model IEnumerable<TaskViewModel>
+@{
+    ViewData["Title"] = "My Tasks";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>My Tasks</h2>
+    <a asp-action="Create" class="btn btn-primary">Create New Task</a>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        <h4>No tasks found</h4>
+        <p>You haven't created any tasks yet. <a asp-action="Create">Create your first task</a> to get started!</p>
+    </div>
+}
+else
+{
+    <div class="row">
+        @foreach (var task in Model)
+        {
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="card @(task.IsCompleted ? "border-success" : "border-primary")">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h6 class="card-title mb-0 @(task.IsCompleted ? "text-decoration-line-through text-muted" : "")">
+                            @Html.Raw(task.Title)
+                        </h6>
+                        <span class="badge @(GetPriorityClass(task.Priority))">@task.Priority</span>
+                    </div>
+                    <div class="card-body">
+                        @if (!string.IsNullOrEmpty(task.Description))
+                        {
+                            <p class="card-text @(task.IsCompleted ? "text-muted" : "")">
+                                @Html.Raw(task.Description.Length > 100 ? task.Description.Substring(0, 100) + "..." : task.Description)
+                            </p>
+                        }
+                        <small class="text-muted">Created: @task.CreatedAt.ToString("MMM dd, yyyy")</small>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn-group" role="group">
+                            <a asp-action="Details" asp-route-id="@task.Id" class="btn btn-outline-info btn-sm">View</a>
+                            <a asp-action="Edit" asp-route-id="@task.Id" class="btn btn-outline-primary btn-sm">Edit</a>
+                            <button type="button" class="btn btn-outline-@(task.IsCompleted ? "warning" : "success") btn-sm" 
+                                    onclick="toggleComplete(@task.Id, @task.IsCompleted.ToString().ToLower())">
+                                @(task.IsCompleted ? "Mark Pending" : "Mark Complete")
+                            </button>
+                            <button type="button" class="btn btn-outline-danger btn-sm" 
+                                    onclick="deleteTask(@task.Id, '@Html.Raw(Html.JavaScriptStringEncode(task.Title))')">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirm Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete the task "<span id="taskTitle"></span>"?</p>
+                <p class="text-muted">This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form id="deleteForm" method="post" style="display: inline;">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+<script>
+function toggleComplete(taskId, isCompleted) {
+    fetch('/Tasks/ToggleComplete/' + taskId, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            location.reload();
+        }
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+function deleteTask(taskId, taskTitle) {
+    document.getElementById('taskTitle').textContent = taskTitle;
+    document.getElementById('deleteForm').action = '/Tasks/Delete/' + taskId;
+    new bootstrap.Modal(document.getElementById('deleteModal')).show();
+}
+</script>
+}
+
+@functions {
+    public string GetPriorityClass(TaskPriority priority)
+    {
+        return priority switch
+        {
+            TaskPriority.Low => "bg-success",
+            TaskPriority.Medium => "bg-warning",
+            TaskPriority.High => "bg-danger",
+            TaskPriority.Critical => "bg-dark",
+            _ => "bg-secondary"
+        };
+    }
+} *@
+
+
+
+@model IEnumerable<TaskViewModel>
+@using System.Text.Encodings.Web
+@inject JavaScriptEncoder JsEncoder
+
+@{
+    ViewData["Title"] = "My Tasks";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>My Tasks</h2>
+    <a asp-action="Create" class="btn btn-primary">Create New Task</a>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        <h4>No tasks found</h4>
+        <p>You haven't created any tasks yet. <a asp-action="Create">Create your first task</a> to get started!</p>
+    </div>
+}
+else
+{
+    <div class="row">
+        @foreach (var task in Model)
+        {
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="card @(task.IsCompleted ? "border-success" : "border-primary")">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h6 class="card-title mb-0 @(task.IsCompleted ? "text-decoration-line-through text-muted" : "")">
+                            @Html.Raw(task.Title)
+                        </h6>
+                        <span class="badge @(GetPriorityClass(task.Priority))">@task.Priority</span>
+                    </div>
+                    <div class="card-body">
+                        @if (!string.IsNullOrEmpty(task.Description))
+                        {
+                            <p class="card-text @(task.IsCompleted ? "text-muted" : "")">
+                                @Html.Raw(task.Description.Length > 100 ? task.Description.Substring(0, 100) + "..." : task.Description)
+                            </p>
+                        }
+                        <small class="text-muted">Created: @task.CreatedAt.ToString("MMM dd, yyyy")</small>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn-group" role="group">
+                            <a asp-action="Details" asp-route-id="@task.Id" class="btn btn-outline-info btn-sm">View</a>
+                            <a asp-action="Edit" asp-route-id="@task.Id" class="btn btn-outline-primary btn-sm">Edit</a>
+                            <button type="button" class="btn btn-outline-@(task.IsCompleted ? "warning" : "success") btn-sm"
+                                    onclick="toggleComplete(@task.Id, @task.IsCompleted.ToString().ToLower())">
+                                @(task.IsCompleted ? "Mark Pending" : "Mark Complete")
+                            </button>
+                            <button type="button" class="btn btn-outline-danger btn-sm"
+                                    onclick="deleteTask(@task.Id, '@JsEncoder.Encode(task.Title)')">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirm Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete the task "<span id="taskTitle"></span>"?</p>
+                <p class="text-muted">This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form id="deleteForm" method="post" style="display: inline;">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+<script>
+function toggleComplete(taskId, isCompleted) {
+    fetch('/Tasks/ToggleComplete/' + taskId, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            location.reload();
+        }
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+function deleteTask(taskId, taskTitle) {
+    document.getElementById('taskTitle').textContent = taskTitle;
+    document.getElementById('deleteForm').action = '/Tasks/Delete/' + taskId;
+    new bootstrap.Modal(document.getElementById('deleteModal')).show();
+}
+</script>
+}
+
+@functions {
+    public string GetPriorityClass(TaskPriority priority)
+    {
+        return priority switch
+        {
+            TaskPriority.Low => "bg-success",
+            TaskPriority.Medium => "bg-warning",
+            TaskPriority.High => "bg-danger",
+            TaskPriority.Critical => "bg-dark",
+            _ => "bg-secondary"
+        };
+    }
+}

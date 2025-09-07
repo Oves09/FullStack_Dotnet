@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Error Handling</title>
+</head>
+<body>
+  <h2>JavaScript Error Handling</h2>
+  <button onclick="triggerError()">Trigger Error</button>
+  <p id="msg"></p>
+
+  <script>
+    function triggerError() {
+      try {
+        let num = prompt("Enter a number:");
+        if (isNaN(num)) {
+          throw new Error("That's not a valid number!");
+        }
+        document.getElementById("msg").innerText = "Square: " + (num * num);
+      } 
+      catch (err) {
+        document.getElementById("msg").innerText = "Error: " + err.message;
+      } 
+      finally {
+        console.log("Error handling finished.");
+      }
+    }
+  </script>
+</body>
+</html>

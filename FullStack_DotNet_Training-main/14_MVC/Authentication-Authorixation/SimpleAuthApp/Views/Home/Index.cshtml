@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+<h2>Welcome to SimpleAuthApp</h2>
+
+@if (User?.Identity?.IsAuthenticated ?? false)
+{
+    <p>Hello <strong>@User.Identity.Name</strong> — <a asp-controller="Home" asp-action="Welcome">Go to Welcome page</a></p>
+}
+else
+{
+    <p>
+        <a asp-controller="Account" asp-action="Login">Login</a> |
+        <a asp-controller="Account" asp-action="Register">Register</a>
+    </p>
+}

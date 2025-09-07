@@ -1,0 +1,23 @@
+@page "{id?}"
+@model ModelBindingDemo.Pages.UserModel
+@{
+    ViewData["Title"] = "User Binding Demo";
+}
+
+<h2>Model Binding Demo</h2>
+
+<h3>Query String Example</h3>
+<p>URL: <code>/User?name=Abhijeet</code></p>
+<p>Name from query: <strong>@Model.QueryName</strong></p>
+
+<h3>Form Example</h3>
+<form method="post">
+    <label>Enter Email: </label>
+    <input type="text" asp-for="Email" />
+    <button type="submit">Submit</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.Email))
+{
+    <p>Email from form: <strong>@Model.Email</strong></p>
+}

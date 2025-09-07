@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - LayoutDemo</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <h1>My Razor Pages App</h1>
+        <nav>
+            <a asp-page="/Index">Home</a> |
+            <a asp-page="/About">About</a> |
+            <a asp-page="/Contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - LayoutDemo</p>
+        @RenderSection("FooterSection", required: false)
+    </footer>
+</body>
+</html>

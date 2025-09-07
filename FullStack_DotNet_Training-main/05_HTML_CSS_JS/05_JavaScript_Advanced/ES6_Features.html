@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ES6 Features</title>
+</head>
+<body>
+  <h2>ES6 Examples</h2>
+  <p id="es6"></p>
+
+  <script>
+    // Template Literals
+    const name = "Abhijeet";
+    const greeting = `Hello, ${name}!`;
+
+    // Arrow Function
+    const add = (a, b) => a + b;
+
+    // Destructuring
+    const person = { fname: "John", age: 25 };
+    const { fname, age } = person;
+
+    // Spread Operator
+    const arr1 = [1, 2];
+    const arr2 = [...arr1, 3, 4];
+
+    document.getElementById("es6").innerHTML = `
+      Greeting: ${greeting} <br>
+      Sum: ${add(5, 10)} <br>
+      Person: ${fname}, Age: ${age} <br>
+      Spread Array: ${arr2}
+    `;
+  </script>
+</body>
+</html>

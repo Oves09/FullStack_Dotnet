@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Branching and Looping</title>
+    </head>
+    <body>
+        <h2>Branching & Looping Example</h2>
+    <pre id="output"></pre>
+
+    <script>
+        let age = 20;
+        let output = "";
+
+        // if-else
+        if (age >= 18) {
+        output += "You are eligible to vote.\n";
+        } else {
+        output += "You are NOT eligible to vote.\n";
+        }
+
+        // switch
+        let day = "Monday";
+        switch(day) {
+        case "Monday":
+            output += "Start of the week.\n";
+            break;
+        case "Friday":
+            output += "Almost weekend!\n";
+            break;
+        default:
+            output += "Just another day.\n";
+        }
+
+        // for loop
+        output += "Numbers 1 to 5: ";
+        for (let i = 1; i <= 5; i++) {
+        output += i + " ";
+        }
+        output += "\n";
+
+        // while loop
+        let num = 3;
+        output += "Countdown: ";
+        while (num > 0) {
+        output += num + " ";
+        num--;
+        }
+        output += "\n";
+
+        // do-while loop
+        let count = 1;
+        output += "Do-while example: ";
+        do {
+        output += count + " ";
+        count++;
+        } while (count <= 3);
+
+        document.getElementById("output").textContent = output;
+    </script>
+    </body>
+</html>

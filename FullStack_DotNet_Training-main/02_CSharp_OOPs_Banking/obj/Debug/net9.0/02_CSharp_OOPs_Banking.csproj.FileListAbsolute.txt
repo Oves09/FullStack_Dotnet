@@ -1,0 +1,15 @@
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\obj\Debug\net9.0\02_CSharp_OOPs_Banking.GeneratedMSBuildEditorConfig.editorconfig
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\obj\Debug\net9.0\02_CSharp_OOPs_Banking.AssemblyInfoInputs.cache
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\obj\Debug\net9.0\02_CSharp_OOPs_Banking.AssemblyInfo.cs
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\obj\Debug\net9.0\02_CSharp_OOPs_Banking.csproj.CoreCompileInputs.cache
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\obj\Debug\net9.0\02_CSharp_OOPs_Banking.sourcelink.json
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\bin\Debug\net9.0\02_CSharp_OOPs_Banking.exe
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\bin\Debug\net9.0\02_CSharp_OOPs_Banking.deps.json
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\bin\Debug\net9.0\02_CSharp_OOPs_Banking.runtimeconfig.json
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\bin\Debug\net9.0\02_CSharp_OOPs_Banking.dll
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\bin\Debug\net9.0\02_CSharp_OOPs_Banking.pdb
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\obj\Debug\net9.0\02_CSharp_OOPs_Banking.dll
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\obj\Debug\net9.0\refint\02_CSharp_OOPs_Banking.dll
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\obj\Debug\net9.0\02_CSharp_OOPs_Banking.pdb
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\obj\Debug\net9.0\02_CSharp_OOPs_Banking.genruntimeconfig.cache
+F:\FullStack_DotNet_Training\02_CSharp_OOPs_Banking\obj\Debug\net9.0\ref\02_CSharp_OOPs_Banking.dll

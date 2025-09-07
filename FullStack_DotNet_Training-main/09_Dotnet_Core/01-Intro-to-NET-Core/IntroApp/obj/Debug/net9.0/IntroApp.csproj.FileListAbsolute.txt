@@ -1,0 +1,15 @@
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\bin\Debug\net9.0\IntroApp.exe
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\bin\Debug\net9.0\IntroApp.deps.json
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\bin\Debug\net9.0\IntroApp.runtimeconfig.json
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\bin\Debug\net9.0\IntroApp.dll
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\bin\Debug\net9.0\IntroApp.pdb
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\obj\Debug\net9.0\IntroApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\obj\Debug\net9.0\IntroApp.AssemblyInfoInputs.cache
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\obj\Debug\net9.0\IntroApp.AssemblyInfo.cs
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\obj\Debug\net9.0\IntroApp.csproj.CoreCompileInputs.cache
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\obj\Debug\net9.0\IntroApp.sourcelink.json
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\obj\Debug\net9.0\IntroApp.dll
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\obj\Debug\net9.0\refint\IntroApp.dll
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\obj\Debug\net9.0\IntroApp.pdb
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\obj\Debug\net9.0\IntroApp.genruntimeconfig.cache
+F:\FullStack_DotNet_Training\09_Dotnet_Core\01-Intro-to-NET-Core\IntroApp\obj\Debug\net9.0\ref\IntroApp.dll

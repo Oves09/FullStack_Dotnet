@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Strings Example</title>
+</head>
+<body>
+  <h2>Strings in JavaScript</h2>
+  <pre id="output"></pre>
+
+  <script>
+    let output = "";
+
+    let str = "JavaScript is Awesome!";
+    output += "Original: " + str + "\n";
+
+    // Length
+    output += "Length: " + str.length + "\n";
+
+    // Uppercase & Lowercase
+    output += "Uppercase: " + str.toUpperCase() + "\n";
+    output += "Lowercase: " + str.toLowerCase() + "\n";
+
+    // Substring
+    output += "Substring (0,10): " + str.substring(0, 10) + "\n";
+
+    // Replace
+    output += "Replace Awesome → Cool: " + str.replace("Awesome", "Cool") + "\n";
+
+    // Split
+    let words = str.split(" ");
+    output += "Words: " + words.join(", ") + "\n";
+
+    // Template literals
+    let lang = "JavaScript";
+    output += `I love coding in ${lang}!\n`;
+
+    document.getElementById("output").textContent = output;
+  </script>
+</body>
+</html>

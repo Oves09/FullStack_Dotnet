@@ -1,0 +1,20 @@
+<h2> {{ title }}</h2>
+
+<!-- Property binding with [ ] -->
+<img [src]="imageUrl" alt="Angular Logo" width="100">
+
+<!-- Disable button dynamically -->
+<button [disabled]="isDisabled">Click Me</button>
+
+<hr>
+
+<h3>Event Binding Example</h3>
+<p>Count: {{ count }}</p>
+
+<button (click)="increaseCount()">Increase</button>
+
+<hr>
+<h3> Two-way Binding Example</h3>
+<input [(ngModel)]="username" placeholder="Enter your name:">
+<p>Hello, {{ username }}</p>
+

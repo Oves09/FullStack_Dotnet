@@ -1,0 +1,11 @@
+﻿@page
+@model TempDataViewDataDemo.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>@ViewData["TitleMessage"]</h2>
+
+<form method="post">
+    <button type="submit" asp-page-handler="Redirect">Go to About Page (TempData)</button>
+</form>

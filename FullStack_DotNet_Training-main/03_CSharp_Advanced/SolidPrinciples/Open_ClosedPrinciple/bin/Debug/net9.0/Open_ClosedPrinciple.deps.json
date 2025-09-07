@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Open_ClosedPrinciple/1.0.0": {
+        "runtime": {
+          "Open_ClosedPrinciple.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Open_ClosedPrinciple/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

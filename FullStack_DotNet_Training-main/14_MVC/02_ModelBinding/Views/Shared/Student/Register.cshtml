@@ -1,0 +1,15 @@
+@model ModelBindingDemo.Models.Student
+
+<h2>Student Registration</h2>
+<form asp-action="Register" method="post">
+    <label>Id:</label>
+    <input asp-for="Id" /><br />
+
+    <label>Name:</label>
+    <input asp-for="Name" /><br />
+
+    <label>Age:</label>
+    <input asp-for="Age" /><br />
+
+    <button type="submit">Submit</button>
+</form>

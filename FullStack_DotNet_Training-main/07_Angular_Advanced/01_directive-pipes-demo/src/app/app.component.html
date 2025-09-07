@@ -1,0 +1,52 @@
+<h1>{{ title }}</h1>
+
+<!-- ngIf Example -->
+<button (click)="toggleEmployees()">Toggle Employees</button>
+<div *ngIf="showEmployees; else noData">
+  <h2>Employee List</h2>
+  <!-- ngFor Example -->
+  <ul>
+    <li *ngFor="let emp of employees">
+      <!-- ngClass: add CSS class if salary > threshold -->
+      <span [ngClass]="{ 'high-salary': emp.salary > highSalaryThreshold }">
+        {{ emp.name }} - {{ emp.role }}
+      </span>
+
+      <!-- ngStyle: apply inline style -->
+      <span [ngStyle]="{ color: emp.salary > highSalaryThreshold ? 'green' : 'red' }">
+        Salary: {{ emp.salary | currency:'INR' }}
+      </span>
+
+      <!-- Pipes: uppercase, date -->
+      <span>Joined: {{ emp.joinDate | date:'longDate' }}</span>
+    </li>
+  </ul>
+</div>
+<ng-template #noData>
+  <p>No employees available</p>
+</ng-template>
+
+<p appHighlight>Hover over me to see highlight directive in action!</p>
+
+<p>Original: {{ title }}</p>
+<p class="reverse">Reverserd (Custom Pipe): {{ title | reverse}}</p>
+
+<h2>Employee Table</h2>
+<table border="1" width="100%">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Role</th>
+    <th>Salary</th>
+    <th>Join Date</th>
+  </tr>
+  <tr *ngFor="let emp of employees">
+    <td>{{ emp.id }}</td>
+    <td appHighlight>{{ emp.name | uppercase }}</td>
+    <td>{{ emp.role }}</td>
+    <td [ngStyle]="{ color: emp.salary > highSalaryThreshold ? 'green' : 'red' }">
+      {{ emp.salary | currency:'INR':'symbol' }}
+    </td>
+    <td>{{ emp.joinDate | date:'fullDate' }}</td>
+  </tr>
+</table>

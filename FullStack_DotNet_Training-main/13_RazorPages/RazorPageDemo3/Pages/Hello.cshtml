@@ -1,0 +1,18 @@
+@page
+@model RazorPageDemo3.Pages.HelloModel
+@{
+    ViewData["Title"] = "Hello Page";
+}
+
+<h2>Hello Razor Pages</h2>
+
+<form method="post">
+    <label>Your Name: </label>
+    <input type="text" asp-for="UserName" />
+    <button type="submit">Submit</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.Greeting))
+{
+    <p><strong>@Model.Greeting</strong></p>
+}

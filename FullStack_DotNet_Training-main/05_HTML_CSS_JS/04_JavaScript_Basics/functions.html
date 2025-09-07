@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>unctions Example</title>
+    </head>
+    <body>
+        <h2>Functions in JavaScript</h2>
+    <pre id="output"></pre>
+
+    <script>
+        let output = "";
+
+        // Function Declaration
+        function greet(name) {
+        return "Hello, " + name + "!";
+        }
+        output += greet("Abhijeet") + "\n";
+
+        // Function Expression
+        const add = function(a, b) {
+        return a + b;
+        };
+        output += "5 + 3 = " + add(5, 3) + "\n";
+
+        // Arrow Function
+        const square = (n) => n * n;
+        output += "Square of 6 = " + square(6) + "\n";
+
+        // Default Parameters
+        function multiply(a, b = 2) {
+        return a * b;
+        }
+        output += "10 * 2 = " + multiply(10) + "\n";
+
+        document.getElementById("output").textContent = output;
+    </script>
+    </body>
+</html>

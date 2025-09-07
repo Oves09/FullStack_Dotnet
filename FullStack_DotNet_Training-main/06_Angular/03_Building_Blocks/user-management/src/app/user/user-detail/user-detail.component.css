@@ -1,0 +1,13 @@
+.user-detail {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  background: #f9f9ff;
+}
+
+.no-user {
+  margin-top: 1rem;
+  color: gray;
+  font-style: italic;
+}

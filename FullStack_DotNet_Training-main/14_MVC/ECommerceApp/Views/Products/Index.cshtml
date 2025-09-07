@@ -1,0 +1,78 @@
+@model List<ECommerceApp.Models.Product>
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>All Products</h2>
+    <a href="/Cart" class="btn btn-outline-primary">
+        <i class="fas fa-shopping-cart"></i> View Cart
+    </a>
+</div>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show">
+        @TempData["Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h5>Filter by Category:</h5>
+        <div class="btn-group" role="group">
+            <a href="/Products" class="btn btn-outline-secondary">All</a>
+            <a href="/Products/Category/electronics" class="btn btn-outline-primary">Electronics</a>
+            <a href="/Products/Category/clothing" class="btn btn-outline-primary">Clothing</a>
+            <a href="/Products/Category/books" class="btn btn-outline-primary">Books</a>
+            <a href="/Products/Category/home" class="btn btn-outline-primary">Home</a>
+            <a href="/Products/Category/sports" class="btn btn-outline-primary">Sports</a>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h5>Advanced Filtering Examples:</h5>
+        <div class="btn-group" role="group">
+            <a href="/Products/Filter/electronics/0-300" class="btn btn-outline-info btn-sm">Electronics under $300</a>
+            <a href="/Products/Filter/clothing/20-100" class="btn btn-outline-info btn-sm">Clothing $20-$100</a>
+            <a href="/Products/Filter/books/30-60" class="btn btn-outline-info btn-sm">Books $30-$60</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@product.Category.ToUpper()</h6>
+                    <p class="card-text">@product.Description</p>
+                    <p class="card-text"><strong>$@product.Price</strong></p>
+                    <p class="card-text"><small class="text-muted">Stock: @product.StockQuantity</small></p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                        <a href="/Products/@product.Category/@product.Id" class="btn btn-primary btn-sm">View Details</a>
+                        @if (product.StockQuantity > 0)
+                        {
+                            <form method="post" action="/Products/AddToCart" class="d-inline">
+                                <input type="hidden" name="productId" value="@product.Id" />
+                                <input type="hidden" name="quantity" value="1" />
+                                <button type="submit" class="btn btn-success btn-sm">Add to Cart</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <span class="btn btn-secondary btn-sm disabled">Out of Stock</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
