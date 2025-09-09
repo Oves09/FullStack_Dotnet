@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model FeedbackPortal.Models.Feedback
+@Html.StyledInput("CustomName", "Enter your name here")
+
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="Rating"></label>
+        <select asp-for="Rating">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <span asp-validation-for="Rating"></span>
+    </div>
+    <div>
+        <label asp-for="Comments"></label>
+        <textarea asp-for="Comments"></textarea>
+        <span asp-validation-for="Comments"></span>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+

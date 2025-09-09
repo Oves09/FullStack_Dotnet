@@ -1,0 +1,14 @@
+﻿@model RazorPagesProductsApp.Models.Product
+
+<div>
+    <strong>@Model.Name</strong> - @Model.Description
+    <ul>
+        @foreach (var c in Model.Categories)
+        {
+            if (!string.IsNullOrEmpty(c.CategoryName))
+            {
+                <li>@c.CategoryName</li>
+            }
+        }
+    </ul>
+</div>

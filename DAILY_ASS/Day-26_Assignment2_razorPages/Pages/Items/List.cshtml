@@ -1,0 +1,15 @@
+﻿@page
+@model Day26_assignment2_razorPages.Pages.Items.ListModel
+@{
+    ViewData["Title"] = "Items List";
+}
+
+<h1>Items</h1>
+<ul>
+    @foreach (var item in Model.Items)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+<a asp-page="Add">Add New Item</a>

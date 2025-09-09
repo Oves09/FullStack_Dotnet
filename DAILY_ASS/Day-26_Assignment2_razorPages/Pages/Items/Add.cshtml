@@ -1,0 +1,14 @@
+﻿@page
+@model Day26_assignment2_razorPages.Pages.Items.AddModel
+@{
+    ViewData["Title"] = "Add Item";
+}
+
+<h1>Add Item</h1>
+
+<form method="post">
+    <input type="text" name="NewItem" />
+    <button type="submit">Add</button>
+</form>
+
+<a asp-page="List">Back to List</a>

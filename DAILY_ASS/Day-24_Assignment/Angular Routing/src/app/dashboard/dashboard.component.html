@@ -1,0 +1,19 @@
+<h2>Product List</h2>
+<ul>
+  <li *ngFor="let product of products" (click)="selectProduct(product)">
+    {{ product.name }} - ₹{{ product.price }}
+  </li>
+</ul>
+
+<hr>
+
+<app-product-details
+  *ngIf="selectedProduct"
+  [product]="selectedProduct"
+  (feedback)="receiveFeedback($event)">
+</app-product-details>
+
+<h3>User Feedback</h3>
+<ul>
+  <li *ngFor="let fb of feedbackList">{{ fb }}</li>
+</ul>

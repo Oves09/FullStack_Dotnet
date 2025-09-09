@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Routing demo in ASP.NET Core MVC</h1>
+
+    <h1 class="display-4">Conventional Routing Example</h1>
+
+    <div class="mt-4">
+        <h3>Home controller routes: </h3>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="/">Home/Index</a>
+            </li>
+            <li class="list-group-item">
+                <a href="/Home/About">Home/About</a>
+            </li>
+            <li class="list-group-item">
+                <a href="/contact">Home/Contact</a>
+            </li>
+            @* About us *@
+            <li class="list-group-item">
+                <a href="/about-us">About us(Custom route)</a>
+            </li>
+            @* /contact/sales *@
+            <li class="list-group-item">
+                <a href="/contact/sales">/Contact/Sales</a>
+            </li>
+            @* /contact/support *@
+            <li class="list-group-item">
+                <a href="/contact/support">/Contact/Support</a>
+            </li>
+        </ul>
+    </div>
+
+    @* Product controller routes *@
+    <h3>Product controller routes: </h3>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="/products">Products/Index</a>
+        </li>
+        <li class="list-group-item">
+            <a href="/products/details/1">Products/Details/1</a>
+        </li>
+        @* For product detail 123 *@
+        <li class="list-group-item">
+            <a href="/products/details/123">Products/Details/123</a>
+        </li>
+    </ul>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

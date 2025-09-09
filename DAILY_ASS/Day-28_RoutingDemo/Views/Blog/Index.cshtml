@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Blog Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Message"] = "Welcome to the Blog Index page!";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Blog Index</h1>
+    <p>Here you can find the latest blog posts.</p>
+    <div class="card mt-4">
+        <div class="card-body">
+            <h5>@ViewData["Message"]</h5>
+            <p>Explore our latest blog posts:</p>
+            <ul class="list-group">
+                @* Giving 2 valid and 2 invalid *@
+                <li class="list-group-item" href="/blog/2023/12">/blog/2023/12 (valid)</li>
+                <li class="list-group-item" href="/blog/2023/13">/blog/2023/13 (valid)</li>
+                <li class="list-group-item" href="/blog/2023/14">/blog/2023/14 (invalid)</li>
+                <li class="list-group-item" href="/blog/2023/15">/blog/2023/15 (invalid)</li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="mt-4">
+        <a href="/">Back to Home</a>
+    </p>
+
+</div>

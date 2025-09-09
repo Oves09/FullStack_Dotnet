@@ -1,0 +1,14 @@
+C:\Users\saira\Desktop\C#\day4\strings\bin\Debug\net9.0\strings.exe
+C:\Users\saira\Desktop\C#\day4\strings\bin\Debug\net9.0\strings.deps.json
+C:\Users\saira\Desktop\C#\day4\strings\bin\Debug\net9.0\strings.runtimeconfig.json
+C:\Users\saira\Desktop\C#\day4\strings\bin\Debug\net9.0\strings.dll
+C:\Users\saira\Desktop\C#\day4\strings\bin\Debug\net9.0\strings.pdb
+C:\Users\saira\Desktop\C#\day4\strings\obj\Debug\net9.0\strings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saira\Desktop\C#\day4\strings\obj\Debug\net9.0\strings.AssemblyInfoInputs.cache
+C:\Users\saira\Desktop\C#\day4\strings\obj\Debug\net9.0\strings.AssemblyInfo.cs
+C:\Users\saira\Desktop\C#\day4\strings\obj\Debug\net9.0\strings.csproj.CoreCompileInputs.cache
+C:\Users\saira\Desktop\C#\day4\strings\obj\Debug\net9.0\strings.dll
+C:\Users\saira\Desktop\C#\day4\strings\obj\Debug\net9.0\refint\strings.dll
+C:\Users\saira\Desktop\C#\day4\strings\obj\Debug\net9.0\strings.pdb
+C:\Users\saira\Desktop\C#\day4\strings\obj\Debug\net9.0\strings.genruntimeconfig.cache
+C:\Users\saira\Desktop\C#\day4\strings\obj\Debug\net9.0\ref\strings.dll

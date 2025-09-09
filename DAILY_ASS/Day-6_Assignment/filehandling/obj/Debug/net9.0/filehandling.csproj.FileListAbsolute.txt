@@ -1,0 +1,14 @@
+C:\Users\saira\Desktop\C#\day6\filehandling\obj\Debug\net9.0\filehandling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saira\Desktop\C#\day6\filehandling\obj\Debug\net9.0\filehandling.AssemblyInfoInputs.cache
+C:\Users\saira\Desktop\C#\day6\filehandling\obj\Debug\net9.0\filehandling.AssemblyInfo.cs
+C:\Users\saira\Desktop\C#\day6\filehandling\obj\Debug\net9.0\filehandling.csproj.CoreCompileInputs.cache
+C:\Users\saira\Desktop\C#\day6\filehandling\bin\Debug\net9.0\filehandling.exe
+C:\Users\saira\Desktop\C#\day6\filehandling\bin\Debug\net9.0\filehandling.deps.json
+C:\Users\saira\Desktop\C#\day6\filehandling\bin\Debug\net9.0\filehandling.runtimeconfig.json
+C:\Users\saira\Desktop\C#\day6\filehandling\bin\Debug\net9.0\filehandling.dll
+C:\Users\saira\Desktop\C#\day6\filehandling\bin\Debug\net9.0\filehandling.pdb
+C:\Users\saira\Desktop\C#\day6\filehandling\obj\Debug\net9.0\filehandling.dll
+C:\Users\saira\Desktop\C#\day6\filehandling\obj\Debug\net9.0\refint\filehandling.dll
+C:\Users\saira\Desktop\C#\day6\filehandling\obj\Debug\net9.0\filehandling.pdb
+C:\Users\saira\Desktop\C#\day6\filehandling\obj\Debug\net9.0\filehandling.genruntimeconfig.cache
+C:\Users\saira\Desktop\C#\day6\filehandling\obj\Debug\net9.0\ref\filehandling.dll

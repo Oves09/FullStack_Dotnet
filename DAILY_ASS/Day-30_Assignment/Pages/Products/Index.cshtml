@@ -1,0 +1,29 @@
+﻿@page
+@model RazorPagesProductsApp.Pages.Products.IndexModel
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h2>Add Product</h2>
+<form method="post">
+    <input asp-for="NewProduct.Name" placeholder="Name" />
+    <input asp-for="NewProduct.Description" placeholder="Description" />
+
+    <h4>Categories</h4>
+    <input asp-for="NewProduct.Categories[0].CategoryName" placeholder="Category 1" />
+    <input asp-for="NewProduct.Categories[1].CategoryName" placeholder="Category 2" />
+
+    <button type="submit">Add</button>
+</form>
+
+<h2>Product List</h2>
+@foreach (var p in RazorPagesProductsApp.Pages.Products.IndexModel.Products)
+{
+    @await Html.PartialAsync("_ProductSummary", p)
+}
+
+<h4>Categories</h4>
+@for (int i = 0; i < Model.NewProduct.Categories.Count; i++)
+{
+    <input asp-for="NewProduct.Categories[@i].CategoryName" placeholder="Category @(i + 1)" />
+}

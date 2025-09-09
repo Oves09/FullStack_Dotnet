@@ -1,0 +1,14 @@
+C:\Users\saira\Desktop\C#\day7\deligates\bin\Debug\net9.0\deligates.exe
+C:\Users\saira\Desktop\C#\day7\deligates\bin\Debug\net9.0\deligates.deps.json
+C:\Users\saira\Desktop\C#\day7\deligates\bin\Debug\net9.0\deligates.runtimeconfig.json
+C:\Users\saira\Desktop\C#\day7\deligates\bin\Debug\net9.0\deligates.dll
+C:\Users\saira\Desktop\C#\day7\deligates\bin\Debug\net9.0\deligates.pdb
+C:\Users\saira\Desktop\C#\day7\deligates\obj\Debug\net9.0\deligates.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saira\Desktop\C#\day7\deligates\obj\Debug\net9.0\deligates.AssemblyInfoInputs.cache
+C:\Users\saira\Desktop\C#\day7\deligates\obj\Debug\net9.0\deligates.AssemblyInfo.cs
+C:\Users\saira\Desktop\C#\day7\deligates\obj\Debug\net9.0\deligates.csproj.CoreCompileInputs.cache
+C:\Users\saira\Desktop\C#\day7\deligates\obj\Debug\net9.0\deligates.dll
+C:\Users\saira\Desktop\C#\day7\deligates\obj\Debug\net9.0\refint\deligates.dll
+C:\Users\saira\Desktop\C#\day7\deligates\obj\Debug\net9.0\deligates.pdb
+C:\Users\saira\Desktop\C#\day7\deligates\obj\Debug\net9.0\deligates.genruntimeconfig.cache
+C:\Users\saira\Desktop\C#\day7\deligates\obj\Debug\net9.0\ref\deligates.dll

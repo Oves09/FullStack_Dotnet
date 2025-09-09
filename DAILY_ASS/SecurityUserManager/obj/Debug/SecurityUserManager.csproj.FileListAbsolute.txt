@@ -1,0 +1,15 @@
+C:\Users\rushikesh\Desktop\Day  Submission\SecurityUserManager\SecurityUserManager\bin\Debug\SecurityUserManager.exe.config
+C:\Users\rushikesh\Desktop\Day  Submission\SecurityUserManager\SecurityUserManager\bin\Debug\SecurityUserManager.exe
+C:\Users\rushikesh\Desktop\Day  Submission\SecurityUserManager\SecurityUserManager\bin\Debug\SecurityUserManager.pdb
+C:\Users\rushikesh\Desktop\Day  Submission\SecurityUserManager\SecurityUserManager\obj\Debug\SecurityUserManager.csproj.AssemblyReference.cache
+C:\Users\rushikesh\Desktop\Day  Submission\SecurityUserManager\SecurityUserManager\obj\Debug\SecurityUserManager.csproj.CoreCompileInputs.cache
+C:\Users\rushikesh\Desktop\Day  Submission\SecurityUserManager\SecurityUserManager\obj\Debug\SecurityUserManager.exe
+C:\Users\rushikesh\Desktop\Day  Submission\SecurityUserManager\SecurityUserManager\obj\Debug\SecurityUserManager.pdb
+C:\Users\rushikesh\Desktop\Day  Submission\SecurityUserManager\SecurityUserManager\obj\Debug\SecurityUserManager.exe.config
+S:\SecurityUserManager\SecurityUserManager\bin\Debug\SecurityUserManager.pdb
+S:\SecurityUserManager\SecurityUserManager\obj\Debug\SecurityUserManager.csproj.AssemblyReference.cache
+S:\SecurityUserManager\SecurityUserManager\obj\Debug\SecurityUserManager.csproj.CoreCompileInputs.cache
+S:\SecurityUserManager\SecurityUserManager\obj\Debug\SecurityUserManager.pdb
+S:\SecurityUserManager\SecurityUserManager\bin\Debug\SecurityUserManager.dll.config
+S:\SecurityUserManager\SecurityUserManager\bin\Debug\SecurityUserManager.dll
+S:\SecurityUserManager\SecurityUserManager\obj\Debug\SecurityUserManager.dll

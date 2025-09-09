@@ -1,0 +1,10 @@
+.book-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.book-card h3 {
+  color: #3f51b5;
+}

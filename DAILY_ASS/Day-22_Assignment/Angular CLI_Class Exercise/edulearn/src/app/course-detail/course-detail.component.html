@@ -1,0 +1,16 @@
+<div *ngIf="course; else noSelection">
+  <h2>Course Details</h2>
+
+  <label>
+    Title:
+    <input [(ngModel)]="course.title" />
+  </label>
+
+  <p>Instructor: {{ course.instructor }}</p>
+  <p>Price: {{ course.price  }}</p>
+  <p>Status: {{ course.available ? 'Available' : 'Checked out' }}</p>
+</div>
+
+<ng-template #noSelection>
+  <p><em>Select a course to view details.</em></p>
+</ng-template>

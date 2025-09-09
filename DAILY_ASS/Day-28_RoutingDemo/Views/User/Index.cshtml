@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "User Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Message"] = "Welcome to your profile page!";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p>@ViewData["Message"]</p>
+    <div class="card mt-4">
+        <div class="card-body">
+            <h5>User Information</h5>
+            <p>Here you can view and edit your profile information.</p>
+            <h5>Profile Details User Name : @ViewData["UserName"] (must be at least 3 characters long)</h5>
+            <p>Tab : @ViewData["Tab"] (optional)</p>
+        </div>
+    </div>
+
+    @* Giving some urls to try error and tab also *@
+    <div class="mt-4">
+        <h5> We can try following Urls : </h5>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="/users/Ankit">/users/Ankit</a></li>
+            <li class="list-group-item"><a href="/users/Ankit/tab=details">/users/Ankit/tab=details</a></li>
+            <li class="list-group-item"><a href="/users/Pa">/users/Pa (to short username ERROR 404)</a></li>
+        </ul>
+    </div>
+
+    <p class="mt-4">
+        <a href="/">Back to Home</a>
+    </p>
+
+</div>

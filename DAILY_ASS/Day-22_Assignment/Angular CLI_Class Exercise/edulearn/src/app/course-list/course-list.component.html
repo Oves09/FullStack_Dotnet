@@ -1,0 +1,13 @@
+<div class="course-list">
+  <div *ngFor="let course of courses" class="course-card">
+    <h3>{{ course.title }}</h3>
+    <p>Instructor: {{ course.instructor }}</p>
+    <p>Price: {{ course.price | currency:'USD' }}</p>
+    <p>Status:
+      <span [ngClass]="{'available': course.available, 'checked-out': !course.available}">
+        {{ course.available ? 'Available' : 'Checked out' }}
+      </span>
+    </p>
+    <button (click)="onViewDetails(course)">View Details</button>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+@model Day28_RegistrationValidation.Models.UserRegistration
+
+@{
+    ViewData["Title"] = "Registration Successful";
+}
+
+<h2>🎉 Registration Successful</h2>
+
+<p><strong>Username:</strong> @Model.Username</p>
+<p><strong>Email:</strong> @Model.Email</p>
+
+<a asp-action="Register">Register Another User</a>

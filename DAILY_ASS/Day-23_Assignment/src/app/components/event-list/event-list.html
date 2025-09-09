@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th>Event Name</th>
+      <th>Date</th>
+      <th>Ticket Price</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of events">
+      <td>{{ e.name }}</td>
+      <td>{{ e.date | date:'dd-MMM-yyyy' }}</td>
+      <td>{{ e.price | priceFormat }}</td>
+      <td>{{ e.category }}</td>
+    </tr>
+  </tbody>
+</table>
+
