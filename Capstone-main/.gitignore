@@ -1,0 +1,15 @@
+# Angular cache
+.angular/cache/
+
+# Node modules
+node_modules/
+
+# Build output
+/dist
+/out-tsc
+
+# VS Code settings
+.vscode/
+
+# Env files
+.env
